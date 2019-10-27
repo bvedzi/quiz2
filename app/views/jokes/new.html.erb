@@ -1,0 +1,7 @@
+<h1>Enter Your Joke</h1>
+ <%= simple_form_for @joke do |f| %>
+	<%= f.input :saying %>
+	<%= f.input :author %>
+	<br />
+	<%= f.submit 'Create Joke', class: 'btn btn-danger' %>
+<% end %>
